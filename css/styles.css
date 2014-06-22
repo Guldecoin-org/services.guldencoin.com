@@ -1,0 +1,82 @@
+
+html, body {
+	height: 100%;
+}
+
+
+/** colors
+ * blauw:  #03386e
+ * oranje: #f08239
+ * broken: #f8f8f8
+ * wit:    #fff
+**/
+body {
+	-webkit-text-size-adjust: none;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background-color: #f8f8f8;
+	-webkit-font-smoothing: antialiased;
+	/*text-rendering: optimizeLegibility; /* this messes up the menu ....*/
+
+	letter-spacing: 0.3px;
+	font-family: "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	font-weight: 300;
+
+	overflow-y: scroll;
+}
+
+.centered {
+	text-align: center;
+}
+
+a {
+	display: block;
+	text-decoration: none !important;
+}
+
+.service {
+	text-align: center;
+	background-color: #03386e;
+	color: #fff;
+	font-weight: 500;
+	padding: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.service:hover, .other-service:hover {
+	color: #f08239;
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	-ms-transition: 0.2s ease;
+	-o-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+
+.service:active, .other-service:active {
+	color: #f08239;
+}
+
+.service>i[class^="icon-"], .service>i[class*=" icon-"] {
+	font-size: 5em;
+	clear: both;
+}
+
+.service>p {
+	font-size: 3em;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.other-service {
+	text-align: center;
+	background-color: #03386e;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+	font-size: 1.5em;
+}
